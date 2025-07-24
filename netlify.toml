@@ -1,0 +1,24 @@
+[build]
+  publish = "public"
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "24.4.1"
+  NPM_VERSION = "11.4.2"
+  HUGO_VERSION = "0.148.1"
+  GO_VERSION = "1.24.5"
+
+[context.production]
+  command = "hugo build"
+
+[context.deploy-preview]
+  command = "hugo build"
+
+[context.branch-deploy]
+  command = "hugo build"
+
+[context.next]
+  command = "hugo build"
+
+[context.next.environment]
+  HUGO_ENV = "next"
