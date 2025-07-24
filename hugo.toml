@@ -16,7 +16,7 @@ title = '阿果的数学笔记'
         titleIcon = true
         descriptions = true
         # git info
-        repoURL = "https://github.com/"
+        repoURL = "https://github.com/qiuboan/math-notes"
         lastMod = true
         lastModRelative = true
         editPage = true
