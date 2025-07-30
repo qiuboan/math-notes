@@ -33,7 +33,7 @@ title = '阿果的数学笔记'
       indexName = ""                    
 
     [params.social]
-        github = ""
+        github = "qiuboan/math-notes"
 
     [params.plausible] # Parameters for Plausible Analytics
         dataDomain = "lotusdocs.dev" # (or set via env variable HUGO_PARAMS_PLAUSIBLE_dataDomain)
