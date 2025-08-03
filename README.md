@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cb931c2-82e2-465f-811c-8213100793bb/deploy-status)](https://app.netlify.com/projects/qiuboan/deploys)
+
 # 阿果的数学笔记
 
 ## 地址
