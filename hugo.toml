@@ -1,7 +1,7 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = '阿果的数学笔记'
-anableGitInfo = true
+enableGitInfo = true
 
 [module]
     [[module.imports]]
