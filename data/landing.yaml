@@ -25,7 +25,7 @@ hero:
   #   height: 80px
 
   title: "阿果的数学笔记"
-  subtitle: ""
+  subtitle: "我会讲一些关于小学数学的题目，这些题目比一般的小学生的题目难，希望能帮到您，大家快来学知识吧！💯💯💯"
   image:
     path: "images" # path to image under configured assets directory. default 'images'
     filename: "cover.png" # filename of your hero image (including file extension)
@@ -42,7 +42,7 @@ hero:
   #  btnText: "GitHub"
   #  url: "https://github.com/"
 
-  info: ""
+  info: "我现在是一名四年级的小学生，正在学习数学，希望你们看看我的网站，让你们看看我辛苦学习的成果。谢谢大家。🚀🚀🚀"
 
 # Feature Grid
 featureGrid:
