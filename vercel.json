@@ -1,6 +1,6 @@
 {
   "builds": [
-    { "src": "hugo.toml", "use": "@vercel/static-build" }
+    { "src": "vercel-build.sh", "use": "@vercel/static-build" }
   ],
   "env": {
     "HUGO_VERSION": "0.148.1",
