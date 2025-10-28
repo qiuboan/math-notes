@@ -1,7 +1,6 @@
 [build]
   publish = "public"
   functions = "functions"
-  """
 
 [build.environment]
   NODE_VERSION = "24.4.1"
@@ -10,8 +9,7 @@
   GO_VERSION = "1.24.5"
 
 [context.production]
-  command = "git config --global core.quotepath false &&
-    git config --global i18n.logOutputEncoding utf-8 && hugo build"
+  command = "git config --global core.quotepath false && git config --global i18n.logOutputEncoding utf-8 && hugo build"
 
 [context.deploy-preview]
   command = "hugo build"
