@@ -1,10 +1,6 @@
 [build]
   publish = "public"
   functions = "functions"
-  command = """
-    git config --global core.quotepath false &&
-    git config --global i18n.logOutputEncoding utf-8 &&
-    hugo --gc --minify
   """
 
 [build.environment]
@@ -14,7 +10,8 @@
   GO_VERSION = "1.24.5"
 
 [context.production]
-  command = "hugo build"
+  command = "git config --global core.quotepath false &&
+    git config --global i18n.logOutputEncoding utf-8 && hugo build"
 
 [context.deploy-preview]
   command = "hugo build"
