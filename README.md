@@ -4,12 +4,16 @@
 
 ## 地址
 
-https://qiuboan.netlify.app
+* 主要：https://qiuboan.cn
+* 备用：https://qiuboan.netlify.app
 
 ## 目录
 
 * 四则运算
   * 两位数的乘法
+  * 分数的加减法
+  * 分数的乘除法
+  * 加减乘除的定义
 * 如何数数
   * 数数的三个概念
   * 数数的基本方法
