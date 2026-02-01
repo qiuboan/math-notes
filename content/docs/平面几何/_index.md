@@ -1,5 +1,5 @@
 ---
-weight: 400
+weight: 700
 title: "平面几何"
 description: ""
 icon: "hexagon"
