@@ -1,0 +1,5 @@
+@import "custom/plugins/katex/katex";
+
+.docs-content .main-content .katex svg {
+  height: inherit;
+}

@@ -1,3 +1,5 @@
 public/
 !public/5042a1b6c5eedf9fc4a80b86e8bf3fe2.txt
 resources/_gen
+.DS_Store
+._*
