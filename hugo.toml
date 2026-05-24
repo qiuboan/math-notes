@@ -44,3 +44,12 @@ enableGitInfo = true
 [services]
   [services.googleAnalytics]
       id = 'G-Y6J24D9NWF'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [["$$", "$$"], ["\\[", "\\]"]]
+          inline = [["$", "$"], ["\\(", "\\)"]]
