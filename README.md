@@ -16,35 +16,33 @@ hugo server -D
 http://localhost:1313/
 ```
 
-## Lotus Docs 与 KaTeX 的已知问题
+## 新建文章
 
-当前使用的 Lotus Docs 模板中，KaTeX 的 `\sqrt` 可能无法正确显示。排查结果是：公式已经被 KaTeX 渲染成 `.katex` DOM，但根号使用的 SVG 被主题的内容区样式覆盖了。
+在 `content/docs/` 下新建文章：
 
-Lotus Docs 的内容区样式会对正文中的 `svg` 设置通用规则：
-
-```css
-.docs-content .main-content svg {
-  max-width: 100%;
-  height: auto;
-}
+```bash
+hugo new content/docs/分类/文章标题.md
 ```
 
-KaTeX 的根号、长箭头等符号也会使用 SVG。上面的通用规则会覆盖 KaTeX 自己的 SVG 高度设置，导致 `\sqrt` 的根号显示异常或不可见。
+例如：
 
-解决方式是在项目中覆盖主题的 KaTeX SCSS 入口文件：
-
-```text
-assets/docs/scss/katex.scss
+```bash
+hugo new content/docs/等差数列/等差中项.md
 ```
 
-内容为：
+新文件会使用 `archetypes/default.md` 中的默认 front matter。发布前把文件头部的 `draft` 改为 `false`。
 
-```scss
-@import "custom/plugins/katex/katex";
+## 提交与推送
 
-.docs-content .main-content .katex svg {
-  height: inherit;
-}
+提交修改：
+
+```bash
+git add .
+git commit -m "更新数学笔记"
 ```
 
-这样 Hugo 会优先使用项目内的 `assets/docs/scss/katex.scss`，同时继续引入 Lotus Docs 原本的 KaTeX 样式。该方式不需要修改 Hugo module 缓存或主题源码，部署到 Cloudflare Pages 时也会生效。
+推送到远程仓库：
+
+```bash
+git push
+```
